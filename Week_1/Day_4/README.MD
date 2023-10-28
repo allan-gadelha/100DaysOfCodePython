@@ -35,3 +35,22 @@ else:
      print("You win!")
  elif computer_choice == user_choice:
      print("It's a draw")
+
+
+I've found some other solutions that i thought it was really clever.
+
+pics = [rock, paper, scissors]
+ 
+your_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+if your_choice < 0 or your_choice > 2 :
+  print("Don\'t enter numbers out of scope!'")
+  exit()
+ 
+print(pics[your_choice])
+ 
+comp_choice = random.randint(0,2)
+print(f"Computer chose:\n{pics[comp_choice]}")
+ 
+choice_matrix = [ ["It\'s a draw", "You lose", "You win"], ["You win", "It\'s a draw", "You lose"], ["You lose", "You win", "It\'s a draw"] ]
+
+In this one using nested list, you just need to see every possibility and write the outcome, 0-0, 0-1, 0-2, a clever way to do it, simple for this case, but i guess when there's mores possiblity it would become more complicated doing that way.
