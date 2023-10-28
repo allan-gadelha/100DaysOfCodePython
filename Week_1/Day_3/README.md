@@ -1,1 +1,5 @@
-This day we learned about IF/ELSE statements, Conditional Operators, Modulo, Nested IF and ELIF and Logical Operators. 
+This day we learned about IF/ELSE statements, Conditional Operators, Modulo, Nested IF and ELIF and Logical Operators.
+
+Day 3 was to create a game with ASCII characters where the input of the players would didctate the history. In my code i've used a if for each step, but in the course the teacher made it all in just one big if statement i don't know about perfomance at the moment, maybe the way the teacher did is better because is faster, but i didn't find it easy to read, maybe because i don't have that many experience but i saw something in his code that i could've used.
+
+I've could used step1 = input().lower() in this way i didn't have to worry about Lower or Upper case, it would already made my code simpler, my code code 2 lines lesser than the teacher but i guess perfomance wise mine was heavier.
