@@ -1,0 +1,1 @@
+This day we learned about IF/ELSE statements, Conditional Operators, Modulo, Nested IF and ELIF and Logical Operators.
