@@ -1,0 +1,1 @@
+Today is the last day of the first week and it's just the final project and i need to use everything i learned on it. The project is a Hangman Game
