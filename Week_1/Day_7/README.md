@@ -3,3 +3,5 @@ Today is the last day of the first week and it's just the final project and i ne
 Part 1: Added the basic loop for choosing the word from a list then getting input from player and checking if the input letter exist in the chosen word
 
 Part 2: Added Display so the player can see the if the choose exist in the chosen word or not
+
+Part 2.1: Changed the way the code gonna loop trought the word.
