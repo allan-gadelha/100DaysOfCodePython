@@ -5,3 +5,5 @@ Part 1: Added the basic loop for choosing the word from a list then getting inpu
 Part 2: Added Display so the player can see the if the choose exist in the chosen word or not
 
 Part 2.1: Changed the way the code gonna loop trought the word.
+
+Part 3: While loop to make the game running till the player gets the word right also conditional to see if the world is right, that probably will need to be changed in the future!

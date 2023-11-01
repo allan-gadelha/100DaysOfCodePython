@@ -13,20 +13,24 @@ for letter in chosen_word:
     display.append("_")
 
 #Debugging code
-#print("chosen_word: ", chosen_word)
+print("chosen_word: ", chosen_word)
 #print(display)
 
-#Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
-guess = input("Guess a letter: ").lower()
+#Trying to create a while loop to keep the game running till there's no more "_" in the display
+while "_" in display:
+    print(display)
+    #Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
+    guess = input("Guess a letter: ").lower()
 
-#Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
-#Loop through each position in the chosen_word
-for position in range(word_length):
-    #Since we don't know where the letter is in the chosen_word, we loop through the word using the position index.
-    letter = chosen_word[position]
-    if letter == guess:
-        #Chance de display "_" to the letter guessed in the right position
-        display[position] = letter
-
-#Just to check the display
-print(display)
+    #Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
+    #Loop through each position in the chosen_word
+    for position in range(word_length):
+        #Since we don't know where the letter is in the chosen_word, we loop through the word using the position index.
+        letter = chosen_word[position]
+        if letter == guess:
+            #Chance de display "_" to the letter guessed in the right position
+            display[position] = letter
+            if "_" not in display:
+                print("You win!")
+                print(display)
+                break
