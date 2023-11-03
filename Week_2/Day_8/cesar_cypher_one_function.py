@@ -19,7 +19,7 @@ def caesar(plain_text, shift_amount, code_type):
             list_text[i] = " "
             continue
 
-        #In case the user types anything that's not a letter
+        #In case the user types anything that's not in the alphabet list
         if letter not in alphabet:
             list_text[i] = letter
             continue
