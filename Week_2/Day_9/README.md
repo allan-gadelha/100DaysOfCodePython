@@ -1,0 +1,3 @@
+Today we learned about Dictionaries and Nesting List/Dictionaries, i'm gonna be true, it's starting to get a little crazy, when i saw dict, inside dict, inside list, wow, it's gonna take a while to learn how to use it properly... I'm already finding it quite rcazy just to navigate into it. I already worked with Dict some long time ago, but it was so long ago that right now i don't remember anything.
+
+Today project was a Blind Auction, a easy application to start learning about dict, the function .items() helped to make the code cleaner
