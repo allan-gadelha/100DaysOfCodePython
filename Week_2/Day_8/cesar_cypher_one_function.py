@@ -1,15 +1,7 @@
 #Alphabet Len = 26
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-#User action, if he wants to encrypt or decrypt
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-
-#User Message
-text = input("Type your message:\n").lower()
-
-#The increases
-shift = int(input("Type the shift number:\n"))
-
+#My function that englobs both encrypt and decrypt
 def caesar(plain_text, shift_amount, code_type):
     #Transforming text in a list, so it get easier to work with also getting the len of this list so we can use a loop
     list_text = list(plain_text)
@@ -17,7 +9,7 @@ def caesar(plain_text, shift_amount, code_type):
 
     #For to iterate each letter in the list!
     for i in range(0, len_list_text):
-        
+
         #Getting the specific letter for the iteration
         letter = list_text[i]
         
@@ -27,34 +19,44 @@ def caesar(plain_text, shift_amount, code_type):
             list_text[i] = " "
             continue
 
+        #In case the user types anything that's not a letter
+        if letter not in alphabet:
+            list_text[i] = letter
+            continue
+
         #Getting the index where the specific letter is in the alphabet list
         index = alphabet.index(letter)
 
-        if code_type == "encode":
-            #We need this part cause if the user chosen shift surpass the alphabet index there's no problem with it. 
-            #This servers to keep counting even in this situation!
-            if index + shift_amount >=26:
-                spare = index + shift_amount
-                spare = spare - 26
-                list_text[i] = alphabet[spare]
-            else:
-                index += shift_amount
-                list_text[i] = alphabet[index]
 
-        if code_type == "decode":
-            #We need this part cause if the user chosen shift surpass the alphabet index there's no problem with it. 
-            #This servers to keep counting even in this situation!
-            if index + shift_amount >=26 or index < 0:
-                spare = index + shift_amount
-                spare = spare - 26
-                list_text[i] = alphabet[spare]
-            else:
-                index -= shift_amount
-                list_text[i] = alphabet[index]
+        # Everytime you have a list and if it need to keep circling like here for exemple, you just need to use the % operator, in this case % (size of the list)
+        if code_type == "encode":
+            #Calculate the new index
+            new_index = (index + shift_amount) % len(alphabet)
+            list_text[i] = alphabet[new_index]
+
+        #Elif cause they're mutually exclusive
+        elif code_type == "decode":
+            #Calculate the new index
+            new_index = (index - shift_amount) % len(alphabet)
+            list_text[i] = alphabet[new_index]
 
     #Transforming it back into a string!
     print("".join(list_text))
     #Debugging
     #print(list_text)
 
-caesar(text, shift, direction)
+while True:
+    #User action, if he wants to encrypt or decrypt
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+    
+    #User Message
+    text = input("Type your message:\n").lower()
+
+    #The increases
+    shift = int(input("Type the shift number:\n"))
+
+    caesar(text, shift, direction)
+
+    continue_program = input("Do you want to continue? Type 'yes' to continue, or anything else to quit:\n").lower()
+    if continue_program != 'yes':
+        break

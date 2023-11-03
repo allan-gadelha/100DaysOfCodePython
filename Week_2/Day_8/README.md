@@ -16,4 +16,8 @@ def prime_checker(number):
 
 I did the first part of the Cesar Cipher, the encrypt part and i was surprise, it took me some time, but now i saw the solution and managed to debug on my OWN, i'm seeing finally some progress in my code.
 
-I made the second part, but i'm having some problems with the decode part, still need to debug it
+I made the second part, but i'm having some problems with the decode part, still need to debug it.
+
+Today was a good learning, i learned another way to use %, if you have a list that if the application surpass the len(list) and in this scenario you just need to start the list from the beggning you can use % len(list), this way the list will start from the beginning.
+
+Added a while loop and some verification to see if the users input something other than letters
