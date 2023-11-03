@@ -15,3 +15,5 @@ def prime_checker(number):
     print("It's not a prime number.")
 
 I did the first part of the Cesar Cipher, the encrypt part and i was surprise, it took me some time, but now i saw the solution and managed to debug on my OWN, i'm seeing finally some progress in my code.
+
+I made the second part, but i'm having some problems with the decode part, still need to debug it
