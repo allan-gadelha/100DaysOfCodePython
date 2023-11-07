@@ -22,13 +22,13 @@ compare_a = data[random.randint(0,49)]
 
 while continue_game:
     print(f"Compare A: {compare_a['name']}, a {compare_a['description']}, from {compare_a['country']}")
-    print(f"Psst A has {compare_a['follower_count']}")
+    #print(f"Psst A has {compare_a['follower_count']}")
 
     print(vs)
 
     compare_b = data[random.randint(0,49)]
     print(f"Compare B: {compare_b['name']}, a {compare_b['description']}, from {compare_b['country']}")
-    print(f"Psst B has {compare_b['follower_count']}")
+    #print(f"Psst B has {compare_b['follower_count']}")
 
     answer = check_input()
 
