@@ -1,0 +1,1 @@
+Today there's no new topic to learn, it's just the project, we're gonna make a game called Higher Lower Game. A simpler version of this one: http://www.higherlowergame.com/
