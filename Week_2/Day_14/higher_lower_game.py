@@ -35,17 +35,16 @@ while continue_game:
     while compare_a == compare_b:
         compare_b = data[random.randint(0,49)]
 
-    if answer == 'a':
-        if compare_a['follower_count'] > compare_b['follower_count']:
-            score += 1
-        else:
-            print(f"Sorry, that's wrong. Final score: {score}")
-            continue_game = False
 
-    if answer == 'b':
-        if compare_b['follower_count'] > compare_a['follower_count']:
-            score += 1
+    answers = {
+        'a': compare_a['follower_count'] > compare_b['follower_count'],
+        'b': compare_b['follower_count'] > compare_a['follower_count']
+    }
+
+    if answers.get(answer, False):
+        score += 1
+        if answer == 'b':
             compare_a = compare_b
-        else:
-            print(f"Sorry, that's wrong. Final score: {score}")
-            continue_game = False
+    else:
+        print(f"Sorry, that's wrong. Final score: {score}")
+        continue_game = False
