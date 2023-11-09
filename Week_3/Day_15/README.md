@@ -1,0 +1,1 @@
+The project for this day was to make a little software for a Coffee Machine, since it was a big project, i've decided to create it on it's on repository: https://github.com/allan-gadelha/Coffee_Machine_Day_15_100DaysOfPython

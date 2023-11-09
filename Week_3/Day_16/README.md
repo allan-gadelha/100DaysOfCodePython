@@ -1,0 +1,3 @@
+Today we learned about OOP - Object Oriented Programming, and the project for this day was to make the project from day 15 on OOP, but since my project was done totally by myself, i don't know yet how to make something full OOP so for this day i'm gonna use the modules provided, maybe in the future i could take another look in my code and make it OOP.
+
+The teacher also provided a documentation about the modules used on this day,
