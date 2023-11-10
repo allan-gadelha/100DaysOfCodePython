@@ -1,0 +1,1 @@
+This day we used the module Turtle to make some graphics art inspired on Damien Hirst, today we just learned about reading documentation and using modules created from others!
