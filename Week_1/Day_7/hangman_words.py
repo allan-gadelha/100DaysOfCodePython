@@ -213,3 +213,19 @@ word_list = [
 'zodiac', 
 'zombie', 
 ]
+
+word_list2 = [
+    'blink 182',
+    'ben 10',
+    '5 seconds of summer',
+    'maroon 5',
+    'the 1975',
+    'linkin park',
+    'green day',
+    '12 angry men',
+    'star wars',
+    'back to the future',
+    'blade runner',
+    'the matrix',
+    'inception',
+]
